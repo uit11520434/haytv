@@ -1,1 +1,0 @@
-[21-Aug-2013 06:44:16] PHP Fatal error:  Call to a member function _get_plugin_filepath() on a non-object in /home/trunghy/public_html/smarty/libs/plugins/modifier.date_format.php on line 11

