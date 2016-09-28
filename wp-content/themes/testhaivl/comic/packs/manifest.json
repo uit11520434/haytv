@@ -1,0 +1,53 @@
+﻿{
+	"Rage Comic" :
+	{
+		"angry" : "Tức giận",
+		"determined" : "Xác định",
+		"focused" : "Tập trung",
+		"foreveralone" : "Forever Alone",
+		"happy" : "Vui",
+		"laugh" : "Cười",
+		"neutral" : "Trung lập",
+		"pleased" : "Sướng",
+		"rage" : "Tức giận",
+		"sad" : "Buồn",
+		"scared" : "Sợ",
+		"seriously" : "Nghiêm túc chứ?",
+		"lust" : "Fap Fap Fap",
+		"surprised" : "Ngạc nhiên",
+		"troll" : "Troll",
+		"fyea" : "F*** Yea!",
+		"cereal" : "Ăn/Đọc báo",
+		"various" : "Linh tinh",
+		"transitions" : "Thời gian"
+	},
+	"Hỏi xoáy Đáp Xoay" :
+	{
+		"cutrongxoay" : "Giáo Sư Xoay",
+		"tiensixoay" : "Tiến Sĩ Xoáy"
+	},
+	"Doremon màu" :
+	{
+		"chaien" : "Chaien",
+		"doremon" : "Doremon",
+		"nobita" : "Nobita",
+		"xeko" : "Xeko",
+		"xuka" : "Xuka",
+		"nhieunhanvat" : "Nhiều nhân vật",
+		"nhieunhanvat2" : "Nhiều nhân vật 2",
+		"nhanvatkhac" : "Nhân vật khác"		
+	},
+	"Gấu Brown Thỏ Cony" :
+	{
+		"gaubrown" : "Gấu Brown",
+		"thocony" : "Thỏ Cony",
+		"browncony" : "Brown và Cony",
+		"moon" : "Moon"
+	},
+	"Đối tượng" :
+	{
+		"hair" : "Tóc",
+		"accessories" : "Phụ kiện",
+		"text" : "Khung lời nói"
+	}
+}

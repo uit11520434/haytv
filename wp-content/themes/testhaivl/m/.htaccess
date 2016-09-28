@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On 
+RewriteBase /
+RewriteRule ^hot$ hot.php
+RewriteRule ^vote$ vote.php
+RewriteRule ^trending$ trending.php
+RewriteRule ^post/([^/.]+)?/?(.*)$ view.php?pid=$1
+RewriteRule ^login$ login.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^search$ search.php
+RewriteRule ^submit$ submit.php
+RewriteRule ^safe$ safe.php
+</IfModule>
+
+<IfModule mod_security.c> 
+   # Turn off mod_security filtering. 
+   SecFilterEngine Off 
+
+   # The below probably isn't needed, 
+   # but better safe than sorry. 
+   SecFilterScanPOST Off 
+</IfModule>

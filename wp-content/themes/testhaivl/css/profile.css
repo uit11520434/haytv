@@ -1,0 +1,300 @@
+
+/*Profile cover*/
+.cover-img{
+    overflow: hidden;
+    max-height: 260px;
+    width: 100%;
+    height: 260px;
+    background: #ccc;
+    position: relative;
+	background-size: 100%;
+	background-image: url("../images/cover.jpg");
+	background-position: center;
+}
+
+
+/*Profile Info*/
+.profile-info{
+    background: #f6f7f9;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 10;
+    min-height: 90px; 
+    color: #737373;
+	font-size: 14px;
+}
+
+.profile-info .avatar img,
+.profile-info .avatar{
+    width: 120px;
+    height: 120px;
+}
+
+.profile-info .avatar{
+    border: 5px solid #fff;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    z-index: 6;
+    box-shadow: 0px 2px 2px #B7B7B7;
+    -moz-box-shadow: 0px 2px 2px #B7B7B7;
+    -webkit-box-shadow: 0px 2px 2px #B7B7B7;
+    background: #c8c8c8 url('../images/df-avatar-120x120.png') no-repeat center center;
+}
+
+   
+
+.profile-info .username,
+.profile-info .user-info,
+.profile-info .profile-desc,
+.profile-info .tagging{
+    margin-left: 150px;
+    display: inline-block;
+    max-width: 420px;
+    margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+.profile-info .username,
+.profile-info .display-name{
+    font-size: 1.53846154em;
+    color: #333;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 1em;
+    margin-bottom: 8px;
+    margin-right: 10px;
+	float: left;
+}
+
+.profile-info .user-info .icon{
+    top: 4px;
+}
+.profile-info .username .icon,        
+.profile-info .display-name .icon{
+    margin: 0 0 0 15px;
+    position: relative;
+    top: 5px;
+}
+
+.profile-info .profile-desc{
+    display: block;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.profile-info .profile-location{
+    background: transparent url('../images/icon-location.png') no-repeat left 2px;
+    padding-left: 16px;
+    margin-left: 25px;
+}
+
+.profile-info .user-stat{
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+    padding: 10px 0px 5px 15px;
+    background: #f9efeb;
+    border-radius: 40px 0 0 40px;
+    -moz-border-radius: 40px 0 0 40px;
+    -webkit-border-radius: 40px 0 0 40px;
+	background-color: #EDEFF4;
+	border-top: 2px solid #A8B2CE;
+	border-bottom: 2px solid #A8B2CE;
+	border-left: 2px solid #A8B2CE;
+}
+
+.profile-info .stat-type{
+	position: relative;
+	top: 0px;
+	left: 5px;
+	display: inline-block;
+	color: #595959;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 0.78571429em;
+}
+
+
+
+.profile-info .stat-numb,
+.profile-info .stat-type{
+    display: block;
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+
+.profile-info  .stat-numb{
+    margin-bottom: 5px;
+    text-align: center;
+	display: inline-block;
+	min-width: 35%;
+	font-weight: bold;
+	font-size: 1.28571429em;
+	line-height: 1em;
+	color:#3B5998;
+}
+
+.list-badge li .lv .stat-numb,.list-badge li .lv .stat-type{
+	color: #FFFFFF;
+	margin: 0;
+}
+
+.profile-info .user-stat li{
+    float: left;
+    padding: 0 14px;
+	text-align: center;
+}
+
+.profile-info .user-stat li:nth-child(1),
+.profile-info .user-stat li:nth-child(2),
+.profile-info .user-stat li:nth-child(3){
+    border-right: 1px dashed #c7c7c7;
+}
+
+
+/*Profile Sub Navigator*/
+#profileNav{
+    padding: 0;
+    background: #f2f2f2;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    height: 40px;
+}	
+#profileNav li{
+    float: left;
+    text-align: center;
+    margin-right: 0px;
+    border-right: 1px solid #e7e7e7;
+}
+
+#profileNav li a{
+    font-size: 1.23076923em; /*16px/13px*/
+    line-height: 2.5em; /*24px/16px*/
+    color: #737373;
+    padding: 0px 20px;
+    display: block;
+    height: 40px;
+}
+#profileNav li a:hover{
+    background: #fff7f4;
+}	
+#profileNav li a:hover,
+#profileNav li.active a{
+    color: #f15a24;
+}
+
+#profileNav li.active a{
+    height: 41px;
+    background: #fff;
+    cursor: default;
+}
+
+#profileNav li.active {
+    background: #fff;
+
+}
+
+
+/*List Badges*/	
+.list-badge li{
+    float: left;
+    margin-right: 10px;
+}
+
+.list-badge li .lv{
+	background: #AD2D2D;
+	border: 2px solid #fff;
+	box-shadow: 0 1px 1px #B7B7B7;
+	text-align: center;
+	padding: 10px;
+}
+
+.list-badge li .link{
+	background: #3B5998;
+	border: 2px solid #fff;
+	box-shadow: 0 1px 1px #B7B7B7;
+	padding: 2px;
+}
+
+/*List BADGEs*/
+.profile-info .list-badge{
+	position: absolute;
+	top: -20px;
+	right: 0;
+}
+
+/*BADGE - PROFILE FUll LIST*/
+.col-left .list-badge{
+	overflow: hidden;
+	margin: 10px 0 0 0;
+}
+.col-left .list-badge li{
+	width: 212px;
+	float: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	margin: 0 0 5px 0;
+}
+.col-left .list-badge a{
+	display: block;
+	text-align: center;
+	padding: 15px 0;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+	.col-left .list-badge a:hover{
+		background-color: #f6f6f6;
+	}
+
+.col-left .list-badge img{
+	width: 120px;
+	height: 120px;
+	border: none;
+	box-shadow: none;
+	display: block;
+	margin: 0 auto;
+}
+	.col-left .list-badge span{
+		display: block;
+	}
+		.col-left .list-badge .badge-name{
+			font-weight: bold;
+			font-size: 18px;
+			color: #f15a24;
+			margin: 15px 0 5px 0;
+		}
+		.col-left .list-badge .badge-lv{
+			font-size: 14px;
+			color: #737373;
+		}
+	
+
+.follow {	
+	font-size: 0.8em;
+	color: #333;
+	float: left;
+	border: 1px solid #333;
+	padding: 4px 8px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.follow:hover {
+	color: #FFF;
+	border: 1px solid #A8B2CE;
+	background: #3B5998;
+}
+
+.following {
+	border: 1px solid #CCC;
+	color: #999;
+}
+
+.following:hover {
+	background-color: #a9382e;
+	border: 1px solid #880904;
+}

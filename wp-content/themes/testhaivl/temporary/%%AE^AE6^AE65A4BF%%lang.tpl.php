@@ -1,0 +1,3 @@
+<?php /* Smarty version 2.6.6, created on 2014-03-31 02:46:17
+         compiled from lang.tpl */ ?>
+        <a id="lang_button" label="<?php if ($_SESSION['language'] == 'vi'): ?>VN<?php elseif ($_SESSION['language'] == 'en'): ?>EN<?php endif; ?>" class='lang' href='javascript:void(0);'><?php if ($_SESSION['language'] == 'vi'): ?>VN<?php elseif ($_SESSION['language'] == 'en'): ?>EN<?php endif; ?></a>

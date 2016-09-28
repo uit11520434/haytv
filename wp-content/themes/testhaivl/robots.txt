@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /fancy/wp-admin/
+Disallow: /fancy/wp-includes/
+Disallow: /fancy/wp-content/

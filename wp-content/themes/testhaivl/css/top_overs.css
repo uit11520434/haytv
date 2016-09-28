@@ -1,0 +1,136 @@
+/* CSS for tabs of Top Overs */
+.clear {
+	clear: both;
+}
+
+#tabs {
+	padding: 0;
+	width: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#tabs p {
+	margin: 0;
+	padding: 0;
+}
+
+#tabs img,#tabs label {
+	float: right;
+	color: #3B5998;
+	font-weight: bold;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+#tabs label {
+	padding-top: 3px;
+}
+
+#tabs ul {
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+
+#tabs ul li {
+	background-color: #EDEFF4;
+	float: left;
+	width: 36px;
+	margin: 0 -1px;
+	padding: 6px 10px;
+	list-style: none;
+	border: 1px solid #A8B2CE;
+	border-bottom: none;
+	font-weight: bold;
+	cursor: pointer;
+	color: #3B5998;
+	text-align: center;
+}
+
+#tabs ul li.active {
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #F8F8F8;
+	margin-bottom: -1px;
+	border-radius: 0px 0px 1px 1px;
+}
+
+#tabs ul li a {
+    color: #8391AF;
+}
+#tabs ul li a.active {
+    color: #3B5999;
+}
+
+#tabs div.current {
+	clear: both;
+	background: #F8F8F8;
+	border: 1px solid #A8B2CE;
+	padding: 10px 5px 5px 10px;
+	min-height: 280px; 
+}
+
+#tabs div.hide {
+	display: none;
+}
+
+/* List Overs */
+.over {
+	background-color: #FFF;
+	height: auto;
+	width: 275px;
+	margin: 0 0 10px 0;
+	border: 1px solid #A8B2CE;
+	border-style: dashed;
+	border-radius: 3px;
+	font-size: 11px;
+	position: relative;
+}
+
+.over div.over_info {
+	height: auto;
+	float: left;
+}
+
+.over div#avatar {
+	margin: 2px;
+}
+
+.over img#avatar {
+	height: 38px;
+	width: 38px;
+	float: left !important;
+	border: 1px solid #AECEDB;
+	border-radius: 3px;
+}
+
+.over div#information {
+	width: 180px;
+	margin-left: 10px;
+}
+
+.over div#information a {
+}
+
+.over div#information a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+.over div#rank {
+	left: 0;
+	position: absolute;
+  top:0;
+}
+
+.over img#rank {
+	height: 20px;
+	width: 20px;
+	float: left;
+	margin: 30px 0 0 2px;
+}
+
+#slogo {
+padding-top: 4px;
+display: block;
+}

@@ -1,0 +1,63 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^ovui\.vn [NC]
+RewriteRule (.*) http://www.ovui.vn/$1 [L,R=301]
+RewriteBase /
+RewriteRule ^signup$ signup.php
+RewriteRule ^settings$ settings.php
+RewriteRule ^log_out$ log_out.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^login$ login.php
+RewriteRule ^delete-account$ delete-account.php
+RewriteRule ^confirmemail$ confirmemail.php
+RewriteRule ^submit$ submit.php
+RewriteRule ^post$ post.php
+RewriteRule ^postedit/(.*) postedit.php?pid=$1
+RewriteRule ^vui/(.*) view.php?pid=$1
+RewriteRule ^p/(.*) view.php?pid=$1
+RewriteRule ^blog/(.*) blog.php?id=$1
+RewriteRule ^safe$ safe.php
+RewriteRule ^blogs$ blogs.php
+RewriteRule ^chemgio$ blogs.php
+RewriteRule ^chemgio/([0-9]+)$ blogs.php?page=$1
+RewriteRule ^tamsu$ tamsu.php
+RewriteRule ^tamsu/([0-9]+)$ tamsu.php?page=$1
+RewriteRule ^tinhot$ tinhot.php
+RewriteRule ^tinhot/([0-9]+)$ tinhot.php?page=$1
+RewriteRule ^random$ random.php
+RewriteRule ^vote$ vote.php
+RewriteRule ^vote/$ vote.php
+RewriteRule ^vote/([0-9]+)$ vote.php?page=$1
+RewriteRule ^new$ trending.php
+RewriteRule ^new/$ trending.php
+RewriteRule ^new/([0-9]+)$ trending.php?page=$1
+RewriteRule ^legend$ legend.php
+RewriteRule ^legend/$ legend.php
+RewriteRule ^legend/([0-9]+)$ legend.php?page=$1
+RewriteRule ^hot$ hot.php
+RewriteRule ^hot/$ hot.php
+RewriteRule ^hot/([0-9]+)$ hot.php?page=$1
+RewriteRule ^online$ online.php
+RewriteRule ^fix/(.*) fix.php?pid=$1
+RewriteRule ^search$ search.php
+RewriteRule ^tag/(.*) tag.php?tag=$1
+RewriteRule ^fast$ fast.php
+RewriteRule ^([^/.]+)?/likes$ likes.php?uname=$1&%{QUERY_STRING}
+RewriteRule ^([^/.]+)?/messages$ messages.php?uname=$1&%{QUERY_STRING}
+RewriteRule ^u/([^/.]+)?$ user.php?uname=$1&%{QUERY_STRING}
+RewriteRule ^faq$ faq.php
+RewriteRule ^giaithuong$ terms_of_service.php
+RewriteRule ^bangvang$ privacy_policy.php
+RewriteRule ^about$ about.php
+RewriteRule ^rules$ rules.php
+RewriteRule ^contact$ contact.php
+RewriteRule ^forgot$ forgot.php
+RewriteRule ^top$ top.php
+RewriteRule ^([a-zA-Z0-9_-]+)$ user.php?uname=$1&%{QUERY_STRING}
+RewriteRule ^cach-vao-facebook-khi-bi-chan-moi-nhat-nam-2013.html blog.php?id=6
+RewriteRule ^lien-he-quang-cao.html blog.php?id=20
+RewriteRule ^([a-zA-Z0-9_-]+)/([0-9]+).html$ view.php?pid=$2
+
+</IfModule>
+
+
